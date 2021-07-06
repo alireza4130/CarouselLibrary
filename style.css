@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+  .slide {
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    position: relative;
+    transition: 1s;
+  }
+  .slide h2 {
+    font-size: 40px;
+    font-family: impact;
+    margin-bottom: 30px;
+    letter-spacing: 50px;
+    white-space: nowrap;
+    transition: 300ms;
+    opacity: 0;
+  }
+  .slide .showTitle {
+    letter-spacing: 10px;
+    opacity: 1;
+  }
+  .slide p {
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 1.9em;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: 300ms 300ms;
+    /* 
+        rem :root element
+        em: element
+     */
+  }
+  .slide .showContent {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .slide p::first-letter {
+    font-size: 40px;
+    color: orange;
+    vertical-align: bottom;
+  }
+
+  .content {
+    width: 50%;
+    position: absolute;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* static */
+  }
+
+  .place {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    left: 50%;
+
+    display: flex;
+
+    transform: translateX(-50%);
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+      
+  }
+
+  .carousel {
+
+    display: flex;
+
+  }
+
+  .dot {
+
+    width: 40px;
+
+    height: 40px;
+
+    background-color: red;
+
+    color: white;
+
+    border-radius: 25px;
+
+    margin-left: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+  }
+
+  .pause {
+
+    height: 45px;
+
+    width: 45px;
+
+    background-color: lightgoldenrodyellow;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin-left: 20px;
+
+    cursor: pointer;
+
+  }
+
+  .next {
+
+    position: absolute;
+
+    top: 50%;
+
+    left: 20px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+  }
+
+  .before  {
+
+
+    position: absolute;
+
+    top: 50%;
+
+    right: 20px;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+  }
